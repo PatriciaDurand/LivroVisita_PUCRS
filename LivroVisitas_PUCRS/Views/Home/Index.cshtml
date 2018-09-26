@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.getNome()</td>
+                <td>@item.getSobrenome()</td>
+                <td>@item.getEmail()</td>
+            </tr>
+        }
+        </table>
+</div>
